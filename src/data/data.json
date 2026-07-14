@@ -1,0 +1,157 @@
+{
+  "site": {
+    "name": "TopCassinoComparador",
+    "domain": "topcassinocomparador.com",
+    "tagline": "O comparador independente de casinos online em Portugal",
+    "description": "Comparamos e analisamos os melhores casinos online licenciados para jogadores portugueses. Bónus, métodos de pagamento e avaliações honestas, tudo num só lugar.",
+    "email": "contacto@topcassinocomparador.com",
+    "foundedYear": 2023,
+    "social": {
+      "facebook": "https://facebook.com",
+      "twitter": "https://x.com",
+      "instagram": "https://instagram.com"
+    },
+    "helplines": [
+      {
+        "name": "Linha 1414 (ICAD)",
+        "description": "Aconselhamento psicológico anónimo, gratuito e confidencial sobre comportamentos aditivos e dependência do jogo. Dias úteis, 10h-18h.",
+        "phone": "1414",
+        "email": "1414@icad.min-saude.pt",
+        "url": "https://www.icad.pt/Page/Index/21"
+      },
+      {
+        "name": "SRIJ - Serviço de Regulação e Inspeção de Jogos",
+        "description": "Entidade reguladora do jogo online em Portugal. Informações sobre licenças, autoexclusão e proibição de jogo.",
+        "phone": "211 140 200",
+        "email": null,
+        "url": "https://www.srij.turismodeportugal.pt"
+      },
+      {
+        "name": "Jogo Responsável",
+        "description": "Informação, aconselhamento e encaminhamento para jogadores com comportamentos de jogo problemático.",
+        "phone": "911 884 125",
+        "email": "geral@jogoresponsavel.pt",
+        "url": "https://jogoresponsavel.pt"
+      },
+      {
+        "name": "Santa Casa da Misericórdia de Lisboa",
+        "description": "Linha de apoio ao jogo responsável e informação sobre jogos sociais.",
+        "phone": "213 235 000",
+        "email": null,
+        "url": "https://www.scml.pt"
+      }
+    ]
+  },
+  "paymentMethods": [
+    { "id": "mbway", "name": "MB WAY", "type": "Carteira Móvel", "speed": "Instantâneo", "popularInPortugal": true },
+    { "id": "multibanco", "name": "Multibanco", "type": "Referência Bancária", "speed": "Instantâneo", "popularInPortugal": true },
+    { "id": "visa", "name": "Visa", "type": "Cartão de Crédito/Débito", "speed": "Instantâneo", "popularInPortugal": true },
+    { "id": "mastercard", "name": "Mastercard", "type": "Cartão de Crédito/Débito", "speed": "Instantâneo", "popularInPortugal": true },
+    { "id": "skrill", "name": "Skrill", "type": "Carteira Eletrónica", "speed": "Instantâneo", "popularInPortugal": false },
+    { "id": "neteller", "name": "Neteller", "type": "Carteira Eletrónica", "speed": "Instantâneo", "popularInPortugal": false },
+    { "id": "paysafecard", "name": "Paysafecard", "type": "Voucher Pré-pago", "speed": "Instantâneo", "popularInPortugal": true },
+    { "id": "transferencia", "name": "Transferência Bancária", "type": "Transferência", "speed": "1-3 dias úteis", "popularInPortugal": true }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "rank": 1,
+      "slug": "bwin",
+      "name": "bwin",
+      "logo": "/brands/bwin.png",
+      "logoInitials": "BW",
+      "accent": "#FFCC00",
+      "rating": 4.9,
+      "votes": 2140,
+      "established": 2016,
+      "badge": "Melhor Bónus",
+      "licenses": [{ "authority": "SRIJ", "number": "PT-SRIJ-00112" }],
+      "bonus": {
+        "headline": "100% até 500€ + 200 Rodadas Grátis",
+        "maxAmount": 500,
+        "freeSpins": 200,
+        "minDeposit": 10,
+        "wagering": "35x",
+        "code": "BWIN500"
+      },
+      "withdrawalTime": "Até 24 horas",
+      "paymentMethods": ["mbway", "multibanco", "visa", "mastercard", "skrill"],
+      "gameProviders": ["Pragmatic Play", "NetEnt", "Evolution Gaming", "Play'n GO"],
+      "pros": [
+        "Marca internacional com licença SRIJ",
+        "Casino, apostas desportivas e poker na mesma conta",
+        "Depósitos instantâneos via MB WAY"
+      ],
+      "cons": [
+        "Requisito de aposta acima da média"
+      ],
+      "mobileFriendly": true,
+      "description": "A bwin é uma das marcas mais reconhecidas do mercado português, combinando casino online, apostas desportivas e poker numa plataforma licenciada pelo SRIJ com excelente suporte local.",
+      "affiliateUrl": "https://www.bwin.pt/",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "slug": "bacana-play",
+      "name": "Bacana Play",
+      "logo": "/brands/bacana-play.png",
+      "logoInitials": "BP",
+      "accent": "#F97316",
+      "rating": 4.8,
+      "votes": 1685,
+      "established": 2020,
+      "badge": "Mais Popular",
+      "licenses": [{ "authority": "SRIJ", "number": "PT-SRIJ-05821" }],
+      "bonus": {
+        "headline": "100% até 250€ + 100 Rodadas Grátis",
+        "maxAmount": 250,
+        "freeSpins": 100,
+        "minDeposit": 10,
+        "wagering": "30x",
+        "code": "BACANA250"
+      },
+      "withdrawalTime": "Até 24 horas",
+      "paymentMethods": ["mbway", "multibanco", "visa", "paysafecard"],
+      "gameProviders": ["Pragmatic Play", "Red Tiger", "Microgaming"],
+      "pros": [
+        "Interface moderna e fácil de usar",
+        "Grande seleção de slots e casino em direto",
+        "Depósito mínimo baixo (10€)"
+      ],
+      "cons": [
+        "Sem secção de apostas desportivas"
+      ],
+      "mobileFriendly": true,
+      "description": "O Bacana Play destaca-se pelo design intuitivo e pelo catálogo diversificado de slots e jogos de casino em direto, com licença SRIJ e métodos de pagamento populares em Portugal.",
+      "affiliateUrl": "https://www.bacanaplay.pt/",
+      "featured": true
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Os casinos online são legais em Portugal?",
+      "answer": "Sim. Os casinos online são legais em Portugal desde que sejam licenciados pelo SRIJ (Serviço de Regulação e Inspeção de Jogos), a entidade reguladora do Turismo de Portugal. Todos os operadores apresentados neste site possuem licença SRIJ válida."
+    },
+    {
+      "question": "Como escolhem os casinos recomendados?",
+      "answer": "Analisamos cada operador com base em critérios como licenciamento SRIJ, segurança, variedade de jogos, rapidez de levantamentos, qualidade do bónus, métodos de pagamento locais (como MB WAY e Multibanco) e qualidade do apoio ao cliente em português."
+    },
+    {
+      "question": "É preciso pagar para usar o TopCassinoComparador?",
+      "answer": "Não. O nosso serviço de comparação é totalmente gratuito. Podemos receber uma comissão de afiliação quando um utilizador se regista através dos nossos links, mas isso nunca influencia as nossas avaliações."
+    },
+    {
+      "question": "Qual a idade mínima para jogar em casinos online?",
+      "answer": "A idade mínima legal para jogo online em Portugal é 18 anos. Todos os operadores licenciados pelo SRIJ têm a obrigação de verificar a idade dos seus utilizadores."
+    },
+    {
+      "question": "Como funciona o requisito de aposta (wagering)?",
+      "answer": "O requisito de aposta indica quantas vezes é necessário apostar o valor do bónus antes de poder levantar os ganhos associados. Por exemplo, um requisito de 35x sobre um bónus de 100€ implica apostar 3.500€ antes de poder levantar os fundos do bónus."
+    },
+    {
+      "question": "O que devo fazer se sentir que estou a perder o controlo do jogo?",
+      "answer": "Recomendamos que contacte imediatamente a Linha 1414 do ICAD (gratuita e confidencial) ou visite a nossa página de Jogo Responsável, onde encontra ferramentas de autoexclusão e outros recursos de apoio."
+    }
+  ]
+}
