@@ -20,7 +20,7 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: 80,
-          background: "linear-gradient(135deg, #111111 0%, #0F766E 140%)",
+          background: "linear-gradient(135deg, #010a08 0%, #0b705a 140%)",
           color: "white",
           fontFamily: "sans-serif",
         }}
@@ -33,9 +33,9 @@ export default function OpengraphImage() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              background: "#14B8A6",
+              background: "#44DFAD",
               borderRadius: 16,
-              color: "#111111",
+              color: "#011f18",
               fontSize: 28,
               fontWeight: 800,
             }}
@@ -44,15 +44,15 @@ export default function OpengraphImage() {
           </div>
           <div style={{ display: "flex", fontSize: 32, fontWeight: 800 }}>
             <span>Top</span>
-            <span style={{ color: "#14B8A6" }}>Cassino</span>
+            <span style={{ color: "#44DFAD" }}>Cassino</span>
             <span>Comparador</span>
           </div>
         </div>
         <div style={{ display: "flex", marginTop: 40, fontSize: 48, fontWeight: 800, maxWidth: 900, lineHeight: 1.15 }}>
           {site.tagline}
         </div>
-        <div style={{ display: "flex", marginTop: 24, fontSize: 24, color: "#D1D5DB", maxWidth: 800 }}>
-          Bónus, pagamentos e avaliações independentes · Apenas +18
+        <div style={{ display: "flex", marginTop: 24, fontSize: 24, color: "#DEDEDE", maxWidth: 800 }}>
+          Condições, pagamentos e análises independentes · Apenas +18
         </div>
       </div>
     ),

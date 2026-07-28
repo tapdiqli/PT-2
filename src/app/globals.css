@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #111111;
-  --color-surface: #17191a;
-  --color-surface-2: #1e2120;
-  --color-primary: #14b8a6;
-  --color-primary-light: #2dd4bf;
-  --color-secondary: #0f766e;
-  --color-muted: #d1d5db;
-  --color-line: #2a2d2c;
+  --color-background: #011f18;
+  --color-surface: #04130e;
+  --color-surface-2: #0a2b21;
+  --color-primary: #44dfad;
+  --color-primary-light: #a0ffe5;
+  --color-secondary: #0b705a;
+  --color-accent: #cbab29;
+  --color-accent-light: #fff797;
+  --color-muted: #dedede;
+  --color-line: #1b4a3c;
 
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-sora);
+  --font-sans: var(--font-geologica);
+  --font-display: var(--font-geologica);
 }
 
 @keyframes marquee {
@@ -79,10 +81,10 @@
 
 @keyframes pulse-ring {
   0% {
-    box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.45);
+    box-shadow: 0 0 0 0 rgba(68, 223, 173, 0.45);
   }
   100% {
-    box-shadow: 0 0 0 10px rgba(20, 184, 166, 0);
+    box-shadow: 0 0 0 10px rgba(68, 223, 173, 0);
   }
 }
 
@@ -109,7 +111,18 @@ body {
 
 ::selection {
   background: var(--color-primary);
-  color: #111111;
+  color: #011f18;
+}
+
+/* The age gate is server-rendered open. The bootstrap script sets data-age="ok"
+   before paint for visitors who already confirmed, so they see neither the
+   overlay nor the scroll lock. */
+html:not([data-age="ok"]) body {
+  overflow: hidden;
+}
+
+html[data-age="ok"] [data-consent="age-gate"] {
+  display: none;
 }
 
 .text-balance {
@@ -118,14 +131,66 @@ body {
 
 .bg-grid {
   background-image:
-    linear-gradient(rgba(20, 184, 166, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20, 184, 166, 0.08) 1px, transparent 1px);
+    linear-gradient(rgba(68, 223, 173, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(68, 223, 173, 0.08) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
 .bg-noise-gradient {
-  background-image: radial-gradient(circle at 20% -10%, rgba(20, 184, 166, 0.25), transparent 55%),
-    radial-gradient(circle at 90% 10%, rgba(15, 118, 110, 0.3), transparent 45%);
+  background-image: radial-gradient(circle at 20% -10%, rgba(68, 223, 173, 0.22), transparent 55%),
+    radial-gradient(circle at 90% 10%, rgba(11, 112, 90, 0.35), transparent 45%);
+}
+
+/* Top-centred glow sitting behind the logo and hero, fading out before the
+   content below, as in the reference layout. */
+.bg-hero-glow {
+  background-image: radial-gradient(
+    95% 700px at 50% -4%,
+    rgba(68, 223, 173, 0.28) 0%,
+    rgba(11, 112, 90, 0.3) 36%,
+    transparent 80%
+  );
+  background-repeat: no-repeat;
+}
+
+/* Headline treatment from the reference layout: a soft top-to-bottom mint fade
+   clipped to the text. */
+.text-hero-gradient {
+  background: linear-gradient(180deg, #ebfffa 0%, #b4bebb 152.78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-card-radial {
+  background: radial-gradient(61.43% 61.43% at 50% 50%, #0f5e43 0%, #04130e 100%);
+}
+
+.bg-footer-gradient {
+  background: linear-gradient(180deg, #010a08 0%, #0b705a 149.24%);
+}
+
+.bg-pill {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(68, 215, 174, 0.2) 100%);
+}
+
+.bg-strip {
+  background: linear-gradient(
+    90deg,
+    rgba(1, 27, 21, 0.2) 0%,
+    rgba(32, 143, 115, 0.2) 25%,
+    rgba(114, 235, 204, 0.2) 50%,
+    rgba(32, 143, 115, 0.2) 75%,
+    rgba(1, 27, 21, 0.2) 100%
+  );
+}
+
+.rule-left {
+  background: linear-gradient(90deg, #010a08 0%, #a0ffe5 100%);
+}
+
+.rule-right {
+  background: linear-gradient(90deg, #a0ffe5 0%, #01271f 100%);
 }
 
 .scrollbar-none::-webkit-scrollbar {

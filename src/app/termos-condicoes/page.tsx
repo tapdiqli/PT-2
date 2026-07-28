@@ -3,8 +3,8 @@ import { LegalDocument } from "@/components/legal/LegalDocument";
 import { getSiteInfo } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Termos e Condições",
-  description: "Termos e condições de utilização do site TopCassinoComparador.",
+  title: "Condições de Utilização",
+  description: "Condições aplicáveis à consulta e utilização deste espaço editorial.",
   alternates: { canonical: "/termos-condicoes" },
 };
 
@@ -13,65 +13,63 @@ export default function TermsPage() {
 
   return (
     <LegalDocument
-      title="Termos e Condições"
+      title="Condições de Utilização"
       updatedAt="1 de Janeiro de 2026"
-      intro={`Estes Termos e Condições regulam a utilização do site ${site.domain} ("Site"), operado por ${site.name}. Ao acedder e utilizar este Site, concorda com os termos aqui descritos. Se não concordar, deve deixar de utilizar o Site.`}
+      intro={`Estas Condições regulam a consulta do website ${site.domain} ("Website"), mantido por ${site.name}. Ao acceder e utilizar este Website, concorda com as condições aqui descritas. Se não concordar, deve deixar de o utilizar.`}
       sections={[
         {
-          heading: "Natureza do Serviço",
+          heading: "Natureza do Website",
           paragraphs: [
-            `${site.name} é um site independente de comparação e informação sobre casinos online licenciados, destinado a maiores de 18 anos residentes em Portugal. Não somos um operador de jogo, não aceitamos apostas, não processamos pagamentos de jogo e não temos qualquer controlo sobre a operação dos casinos apresentados.`,
-            "Todo o conteúdo publicado neste Site tem fins meramente informativos e não constitui aconselhamento financeiro, legal ou profissional de qualquer tipo.",
+            `${site.name} é um espaço independente de carácter informativo e editorial, destinado a utilizadores maiores de 18 anos. Não operamos serviços próprios, não gerimos contas de utilizador, não intermediamos transações e não temos qualquer controlo sobre o funcionamento das plataformas apresentadas.`,
+            "Todo o conteúdo publicado tem uma finalidade exclusivamente informativa e não constitui aconselhamento financeiro, legal ou profissional de qualquer natureza.",
           ],
         },
         {
           heading: "Requisito de Idade",
           paragraphs: [
-            "O acesso e utilização deste Site estão estritamente reservados a pessoas com 18 ou mais anos. Ao utilizar este Site, o utilizador declara e garante que tem, pelo menos, 18 anos de idade.",
+            "O acesso e a consulta deste Website estão reservados a pessoas com 18 ou mais anos. Ao utilizá-lo, o visitante declara e garante que cumpre este requisito. A validação da idade é pedida antes de continuar.",
           ],
         },
         {
-          heading: "Conteúdo de Afiliação",
+          heading: "Nota sobre Parcerias",
           paragraphs: [
-            "Este Site contém links de afiliação para operadores de casino online terceiros. Podemos receber uma compensação financeira quando um utilizador se regista ou realiza um depósito através destes links, sem qualquer custo adicional para o utilizador.",
-            "Esta compensação não influencia a nossa metodologia de avaliação, classificações ou a ordem de apresentação dos operadores no Site.",
+            "Alguns links presentes neste Website direcionam para serviços externos. Em certos casos, podemos receber uma compensação se a navegação for continuada após a saída deste site, sem qualquer custo adicional para o visitante.",
+            "Este modelo não influencia a forma como os conteúdos são elaborados nem a ordem pela qual as plataformas são apresentadas. Nenhuma plataforma recebe destaque por motivo de parceria.",
           ],
         },
         {
           heading: "Precisão da Informação",
           paragraphs: [
-            "Empregamos esforços razoáveis para manter a informação apresentada atualizada e precisa. No entanto, bónus, termos e condições dos operadores de terceiros podem alterar-se sem aviso prévio. Recomendamos que confirme sempre os termos atuais diretamente no site do operador antes de qualquer registo ou depósito.",
+            "Empregamos esforços razoáveis para manter a informação apresentada atualizada e correta. As condições comunicadas por entidades terceiras podem, no entanto, alterar-se sem aviso prévio. Recomendamos que confirme sempre os termos atuais diretamente na origem antes de qualquer decisão.",
           ],
         },
         {
           heading: "Limitação de Responsabilidade",
           paragraphs: [
-            `${site.name} não é responsável por quaisquer perdas, danos ou prejuízos, diretos ou indiretos, resultantes da utilização de serviços prestados por operadores de casino online listados neste Site. A relação contratual relativa ao jogo estabelece-se exclusivamente entre o utilizador e o operador escolhido.`,
+            `${site.name} não é responsável por quaisquer perdas ou prejuízos, diretos ou indiretos, resultantes da utilização de serviços prestados por entidades terceiras referidas neste Website. Qualquer relação contratual estabelece-se exclusivamente entre o visitante e a entidade que escolher.`,
           ],
         },
         {
           heading: "Propriedade Intelectual",
           paragraphs: [
-            "Todo o conteúdo original deste Site, incluindo textos, gráficos, logótipos e design, é propriedade de " +
-              site.name +
-              " e está protegido por leis de direitos de autor. É proibida a reprodução sem autorização prévia por escrito.",
+            `Todo o conteúdo original deste Website, incluindo textos, gráficos, logótipos e desenho, é propriedade de ${site.name} e está protegido por legislação de direitos de autor. É proibida a reprodução sem autorização prévia por escrito.`,
           ],
         },
         {
-          heading: "Alterações aos Termos",
+          heading: "Alterações às Condições",
           paragraphs: [
-            "Reservamo-nos o direito de atualizar estes Termos e Condições em qualquer momento. As alterações entram em vigor imediatamente após a publicação nesta página.",
+            "Reservamo-nos o direito de atualizar estas Condições em qualquer momento. As alterações entram em vigor imediatamente após a respetiva publicação nesta página.",
           ],
         },
         {
           heading: "Lei Aplicável",
           paragraphs: [
-            "Estes Termos e Condições são regidos pela lei portuguesa. Quaisquer litígios relacionados com a utilização deste Site serão submetidos aos tribunais competentes de Portugal.",
+            "Estas Condições são regidas pela lei portuguesa. Quaisquer litígios relacionados com a utilização deste Website serão submetidos aos tribunais competentes de Portugal.",
           ],
         },
         {
           heading: "Contacto",
-          paragraphs: [`Para qualquer questão relacionada com estes Termos e Condições, contacte-nos através de ${site.email}.`],
+          paragraphs: [`Para qualquer questão relacionada com estas Condições, contacte-nos através de ${site.email}.`],
         },
       ]}
     />

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
-import { useAffiliateUrl } from "@/hooks/useAffiliateUrl";
 
 type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
 type ButtonSize = "sm" | "md" | "lg";
@@ -16,7 +15,8 @@ interface BaseProps {
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary: "bg-primary text-background hover:bg-primary-light shadow-lg shadow-primary/20",
+  primary:
+    "bg-gradient-to-b from-accent-light to-accent text-black hover:from-[#fff366] hover:to-[#937b1b] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]",
   secondary: "bg-secondary text-white hover:bg-secondary/80",
   outline: "border border-primary/50 text-primary hover:bg-primary/10",
   ghost: "text-white hover:bg-white/10",
@@ -50,40 +50,6 @@ export function ButtonLink({ href, external, onClick, variant = "primary", size 
     <Link href={href} className={classes} onClick={onClick}>
       {children}
     </Link>
-  );
-}
-
-interface AffiliateButtonLinkProps extends BaseProps {
-  /** Real outgoing partner/casino URL. The visitor's gclid is appended automatically. */
-  partnerUrl: string;
-  ariaLabel?: string;
-}
-
-/**
- * CTA button for links that lead offsite to a partner/casino. Always opens
- * in a new tab and automatically appends the visitor's `gclid` (if any) so
- * Google Ads click attribution survives the redirect.
- */
-export function AffiliateButtonLink({
-  partnerUrl,
-  variant = "primary",
-  size = "md",
-  className,
-  children,
-  ariaLabel,
-}: AffiliateButtonLinkProps) {
-  const linkUrl = useAffiliateUrl(partnerUrl);
-
-  return (
-    <a
-      href={linkUrl}
-      target="_blank"
-      rel="noopener noreferrer sponsored"
-      aria-label={ariaLabel}
-      className={cn(base, variantClasses[variant], sizeClasses[size], className)}
-    >
-      {children}
-    </a>
   );
 }
 

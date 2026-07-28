@@ -1,22 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Sora } from "next/font/google";
+import { Geologica } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { ResponsibleGamingBar } from "@/components/layout/ResponsibleGamingBar";
 import { GclidCapture } from "@/components/layout/GclidCapture";
+import { ConsentGate } from "@/components/layout/ConsentGate";
+import { consentBootstrapScript } from "@/lib/consent";
 import { getSiteInfo } from "@/lib/data";
 
-const inter = Inter({
-  variable: "--font-inter",
+const geologica = Geologica({
+  variable: "--font-geologica",
   subsets: ["latin"],
-  display: "swap",
-});
-
-const sora = Sora({
-  variable: "--font-sora",
-  subsets: ["latin"],
-  weight: ["600", "700", "800"],
   display: "swap",
 });
 
@@ -31,11 +25,11 @@ export const metadata: Metadata = {
   },
   description: site.description,
   keywords: [
-    "casinos online Portugal",
-    "melhores casinos online",
-    "bónus casino online",
-    "casino online SRIJ",
-    "comparador de casinos",
+    "análise editorial de plataformas digitais",
+    "plataformas digitais Portugal",
+    "enquadramento SRIJ",
+    "entretenimento digital",
+    "utilização consciente",
   ],
   alternates: {
     canonical: "/",
@@ -60,22 +54,25 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#111111",
+  themeColor: "#011f18",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  // The consent bootstrap script sets data-age / data-cookies on <html> before
+  // hydration, which React would otherwise report as a mismatch.
   return (
-    <html lang="pt-PT">
-      <body className={`${inter.variable} ${sora.variable} bg-background font-sans text-white antialiased`}>
+    <html lang="pt-PT" suppressHydrationWarning>
+      <body className={`${geologica.variable} bg-background font-sans text-white antialiased`}>
+        <script dangerouslySetInnerHTML={{ __html: consentBootstrapScript }} />
         <GclidCapture />
-        <div className="flex min-h-screen flex-col">
-          <ResponsibleGamingBar />
+        <div className="bg-hero-glow flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
+        <ConsentGate />
       </body>
     </html>
   );

@@ -20,8 +20,6 @@ export interface Brand {
   logo: string;
   logoInitials: string;
   accent: string;
-  rating: number;
-  votes: number;
   established: number;
   badge: string;
   licenses: License[];

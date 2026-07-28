@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import { useAffiliateUrl } from "@/hooks/useAffiliateUrl";
 
 interface AffiliateCardLinkProps {
-  /** Real outgoing partner/casino URL. The visitor's gclid is appended automatically. */
+  /** Real outgoing partner URL. The visitor's gclid is appended automatically. */
   partnerUrl: string;
   id?: string;
   className?: string;
@@ -13,8 +13,8 @@ interface AffiliateCardLinkProps {
 }
 
 /**
- * Wraps an entire brand/partner card in a single outgoing `<a>` so the whole
- * card is clickable, per Google Ads gambling-policy card requirements.
+ * Wraps an entire partner card in a single outgoing `<a>` so the whole card is
+ * clickable, per Google Ads card requirements.
  */
 export function AffiliateCardLink({ partnerUrl, id, className, ariaLabel, children }: AffiliateCardLinkProps) {
   const linkUrl = useAffiliateUrl(partnerUrl);

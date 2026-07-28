@@ -20,7 +20,7 @@ export function LegalDocument({ title, updatedAt, intro, sections }: LegalDocume
         <p className="mt-2 text-sm text-gray-500">Última atualização: {updatedAt}</p>
         <p className="mt-6 leading-relaxed text-gray-300">{intro}</p>
 
-        <div className="mt-10 space-y-8 border-t border-white/10 pt-8">
+        <div className="mt-10 space-y-8 border-t border-primary/20 pt-8">
           {sections.map((section, index) => (
             <div key={section.heading}>
               <h2 className="font-display text-lg font-bold text-white">

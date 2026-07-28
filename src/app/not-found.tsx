@@ -8,7 +8,7 @@ export default function NotFound() {
         <p className="font-display text-6xl font-extrabold text-primary">404</p>
         <h1 className="mt-4 font-display text-2xl font-bold text-white">Página não encontrada</h1>
         <p className="mt-3 text-sm text-gray-400">
-          A página que procura pode ter sido movida ou já não existe. Volte ao início para continuar a explorar.
+          A página que procura pode ter sido movida ou já não existe. Volte ao início para continuar a consulta.
         </p>
         <ButtonLink href="/" className="mt-6">
           Voltar ao Início

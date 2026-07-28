@@ -1,50 +1,33 @@
-import { Container } from "@/components/ui/Container";
-import { ButtonLink } from "@/components/ui/Button";
+const signals = ["Julgamento fiável", "Dentro dos padrões locais", "Envolvimento com responsabilidade"];
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-white/10 bg-noise-gradient">
-      <div className="pointer-events-none absolute inset-0 bg-grid opacity-40" />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/40 to-background" />
-      <Container className="relative py-6 sm:py-10">
-        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
-          <div className="animate-fade-up">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary-light">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse-ring" />
-              Atualizado para {new Date().getFullYear()} · Licenciados SRIJ
-            </span>
-            <h1 className="mt-4 font-display text-2xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Os melhores <span className="text-primary">casinos online</span> em Portugal, comparados por especialistas
-            </h1>
-            <p className="my-2 md:my-4 max-w-xl text-xs leading-relaxed text-gray-300 sm:text-base">
-              Analisamos bónus, métodos de pagamento locais como MB WAY e Multibanco, e a rapidez de levantamento de cada
-              operador licenciado — para que escolha com confiança.
-            </p>
-            <p className="text-xs text-gray-500">
-              Conteúdo apenas para maiores de 18 anos. O jogo pode ser aditivo — jogue com responsabilidade.
-            </p>
-          </div>
+    <section className="relative mx-auto flex w-full max-w-[1000px] flex-col items-center gap-4 py-4 sm:gap-7 sm:py-14">
+      <div className="flex w-full flex-col items-center gap-2.5 px-4 sm:gap-4">
+        <h1 className="text-hero-gradient text-center font-display text-2xl font-bold capitalize leading-[34px] sm:text-4xl sm:font-semibold sm:leading-tight lg:text-[50px]">
+          Análise Editorial de Plataformas Digitais — Edição {new Date().getFullYear()}
+        </h1>
+        <p className="text-center text-base font-light leading-normal text-[#f1f1f1] sm:text-xl sm:font-normal">
+          Reunimos informação clara, apresentada de acordo com o enquadramento definido pelo SRIJ, para apoiar a
+          compreensão das opções disponíveis.
+        </p>
+      </div>
 
-          <div className="hidden lg:block animate-fade-up [animation-delay:120ms] rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Comece agora</p>
-            <p className="mt-2 text-sm leading-relaxed text-gray-300">
-              Encontre o casino online ideal para si ou consulte os nossos recursos de jogo responsável.
-            </p>
-            <div className="mt-5 flex flex-col gap-3">
-              <ButtonLink href="/casinos-online" size="lg" className="w-full justify-center">
-                Ver Ranking Completo
-              </ButtonLink>
-              <ButtonLink href="/jogo-responsavel" variant="outline" size="lg" className="w-full justify-center">
-                Jogo Responsável
-              </ButtonLink>
-            </div>
-            <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4 text-xs text-gray-400">
-              <span>🔒 Licenciados SRIJ</span>
-              <span>8+ Casinos Avaliados</span>
-            </div>
-          </div>
-        </div>
-      </Container>
+      <div className="scrollbar-none flex w-full items-center gap-2.5 overflow-x-auto px-4 sm:justify-center sm:gap-5">
+        <span className="rule-left hidden h-px min-w-[30px] shrink-0 sm:block lg:min-w-[80px]" />
+        {signals.map((signal) => (
+          <span
+            key={signal}
+            className="bg-pill flex shrink-0 items-center gap-1.5 rounded-[20px] border border-primary/30 px-2.5 py-1.5 text-[13px] font-medium tracking-[0.03em] text-white sm:gap-2 sm:px-4 sm:py-2 sm:text-[15px] sm:font-normal"
+          >
+            <svg viewBox="0 0 20 20" fill="currentColor" className="h-[18px] w-[18px] text-primary-light sm:h-5 sm:w-5">
+              <path d="M10 1.6l2.2 1.5 2.6-.3 1 2.4 2.2 1.5-.8 2.5.8 2.5-2.2 1.5-1 2.4-2.6-.3L10 18.4l-2.2-1.6-2.6.3-1-2.4L2 13.2l.8-2.5L2 8.2l2.2-1.5 1-2.4 2.6.3L10 1.6zm-.8 10.9l4.1-4.1-1.2-1.2-2.9 2.9-1.5-1.5-1.2 1.2 2.7 2.7z" />
+            </svg>
+            {signal}
+          </span>
+        ))}
+        <span className="rule-right hidden h-px min-w-[30px] shrink-0 sm:block lg:min-w-[80px]" />
+      </div>
     </section>
   );
 }

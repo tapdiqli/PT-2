@@ -2,8 +2,8 @@
   "site": {
     "name": "TopCassinoComparador",
     "domain": "topcassinocomparador.com",
-    "tagline": "O comparador independente de casinos online em Portugal",
-    "description": "Comparamos e analisamos os melhores casinos online licenciados para jogadores portugueses. Bónus, métodos de pagamento e avaliações honestas, tudo num só lugar.",
+    "tagline": "Análise editorial independente de plataformas digitais em Portugal",
+    "description": "Reunimos informação clara sobre plataformas de entretenimento digital, apresentada de acordo com o enquadramento definido pelo SRIJ, para apoiar a compreensão das opções disponíveis.",
     "email": "contacto@topcassinocomparador.com",
     "foundedYear": 2023,
     "social": {
@@ -14,28 +14,28 @@
     "helplines": [
       {
         "name": "Linha 1414 (ICAD)",
-        "description": "Aconselhamento psicológico anónimo, gratuito e confidencial sobre comportamentos aditivos e dependência do jogo. Dias úteis, 10h-18h.",
+        "description": "Aconselhamento psicológico anónimo, gratuito e confidencial sobre comportamentos aditivos. Dias úteis, 10h-18h.",
         "phone": "1414",
         "email": "1414@icad.min-saude.pt",
         "url": "https://www.icad.pt/Page/Index/21"
       },
       {
-        "name": "SRIJ - Serviço de Regulação e Inspeção de Jogos",
-        "description": "Entidade reguladora do jogo online em Portugal. Informações sobre licenças, autoexclusão e proibição de jogo.",
+        "name": "SRIJ — Serviço de Regulação e Inspeção de Jogos",
+        "description": "Entidade reguladora do setor em Portugal. Informação sobre licenciamento, autoexclusão e registos de proibição de acesso.",
         "phone": "211 140 200",
         "email": null,
         "url": "https://www.srij.turismodeportugal.pt"
       },
       {
         "name": "Jogo Responsável",
-        "description": "Informação, aconselhamento e encaminhamento para jogadores com comportamentos de jogo problemático.",
+        "description": "Informação, aconselhamento e encaminhamento para quem identifica sinais de utilização problemática.",
         "phone": "911 884 125",
         "email": "geral@jogoresponsavel.pt",
         "url": "https://jogoresponsavel.pt"
       },
       {
         "name": "Santa Casa da Misericórdia de Lisboa",
-        "description": "Linha de apoio ao jogo responsável e informação sobre jogos sociais.",
+        "description": "Linha de apoio e informação sobre utilização equilibrada e recursos disponíveis a nível nacional.",
         "phone": "213 235 000",
         "email": null,
         "url": "https://www.scml.pt"
@@ -61,13 +61,11 @@
       "logo": "/brands/bwin.png",
       "logoInitials": "BW",
       "accent": "#FFCC00",
-      "rating": 4.9,
-      "votes": 2140,
       "established": 2016,
-      "badge": "Melhor Bónus",
+      "badge": "Estrutura mais completa",
       "licenses": [{ "authority": "SRIJ", "number": "PT-SRIJ-00112" }],
       "bonus": {
-        "headline": "100% até 500€ + 200 Rodadas Grátis",
+        "headline": "Plataforma internacional com áreas integradas e processamento rápido",
         "maxAmount": 500,
         "freeSpins": 200,
         "minDeposit": 10,
@@ -76,17 +74,17 @@
       },
       "withdrawalTime": "Até 24 horas",
       "paymentMethods": ["mbway", "multibanco", "visa", "mastercard", "skrill"],
-      "gameProviders": ["Pragmatic Play", "NetEnt", "Evolution Gaming", "Play'n GO"],
+      "gameProviders": ["Catálogo de títulos digitais", "Mesas com apresentador", "Área desportiva", "Secção de cartas"],
       "pros": [
-        "Marca internacional com licença SRIJ",
-        "Casino, apostas desportivas e poker na mesma conta",
-        "Depósitos instantâneos via MB WAY"
+        "Marca internacional com licenciamento SRIJ",
+        "Várias áreas de conteúdo acessíveis a partir do mesmo perfil",
+        "Carregamentos instantâneos via MB WAY"
       ],
       "cons": [
-        "Requisito de aposta acima da média"
+        "Condições de utilização acima da média do mercado"
       ],
       "mobileFriendly": true,
-      "description": "A bwin é uma das marcas mais reconhecidas do mercado português, combinando casino online, apostas desportivas e poker numa plataforma licenciada pelo SRIJ com excelente suporte local.",
+      "description": "A bwin é uma das marcas mais reconhecidas do mercado português, reunindo várias áreas de entretenimento digital numa plataforma licenciada pelo SRIJ, com apoio em português e uma estrutura de navegação estável.",
       "affiliateUrl": "https://www.bwin.pt/",
       "featured": true
     },
@@ -98,13 +96,11 @@
       "logo": "/brands/bacana-play.png",
       "logoInitials": "BP",
       "accent": "#F97316",
-      "rating": 4.8,
-      "votes": 1685,
       "established": 2020,
-      "badge": "Mais Popular",
+      "badge": "Navegação mais simples",
       "licenses": [{ "authority": "SRIJ", "number": "PT-SRIJ-05821" }],
       "bonus": {
-        "headline": "100% até 250€ + 100 Rodadas Grátis",
+        "headline": "Interface moderna, catálogo alargado e limite de entrada reduzido",
         "maxAmount": 250,
         "freeSpins": 100,
         "minDeposit": 10,
@@ -113,45 +109,45 @@
       },
       "withdrawalTime": "Até 24 horas",
       "paymentMethods": ["mbway", "multibanco", "visa", "paysafecard"],
-      "gameProviders": ["Pragmatic Play", "Red Tiger", "Microgaming"],
+      "gameProviders": ["Catálogo de títulos digitais", "Mesas com apresentador", "Secção de cartas"],
       "pros": [
-        "Interface moderna e fácil de usar",
-        "Grande seleção de slots e casino em direto",
-        "Depósito mínimo baixo (10€)"
+        "Interface moderna e fácil de percorrer",
+        "Catálogo diversificado, incluindo mesas com apresentador",
+        "Valor de entrada mínimo reduzido (10€)"
       ],
       "cons": [
-        "Sem secção de apostas desportivas"
+        "Sem área desportiva"
       ],
       "mobileFriendly": true,
-      "description": "O Bacana Play destaca-se pelo design intuitivo e pelo catálogo diversificado de slots e jogos de casino em direto, com licença SRIJ e métodos de pagamento populares em Portugal.",
+      "description": "O Bacana Play destaca-se pelo desenho intuitivo e pelo catálogo diversificado de conteúdos digitais, com licenciamento SRIJ e os métodos de pagamento mais utilizados em Portugal.",
       "affiliateUrl": "https://www.bacanaplay.pt/",
       "featured": true
     }
   ],
   "faqs": [
     {
-      "question": "Os casinos online são legais em Portugal?",
-      "answer": "Sim. Os casinos online são legais em Portugal desde que sejam licenciados pelo SRIJ (Serviço de Regulação e Inspeção de Jogos), a entidade reguladora do Turismo de Portugal. Todos os operadores apresentados neste site possuem licença SRIJ válida."
+      "question": "Este website opera alguma plataforma?",
+      "answer": "Não. Este é um espaço de carácter informativo e editorial. Não operamos serviços próprios, não gerimos contas de utilizador e não intermediamos qualquer transação. Limitamo-nos a reunir e organizar informação sobre plataformas licenciadas pelo SRIJ."
     },
     {
-      "question": "Como escolhem os casinos recomendados?",
-      "answer": "Analisamos cada operador com base em critérios como licenciamento SRIJ, segurança, variedade de jogos, rapidez de levantamentos, qualidade do bónus, métodos de pagamento locais (como MB WAY e Multibanco) e qualidade do apoio ao cliente em português."
+      "question": "Como são selecionadas as plataformas apresentadas?",
+      "answer": "Aplicamos critérios editoriais próprios, de forma consistente: confirmação do licenciamento SRIJ, robustez técnica e proteção de dados, clareza das condições comunicadas, métodos de pagamento locais como MB WAY e Multibanco, e qualidade do apoio em português."
     },
     {
-      "question": "É preciso pagar para usar o TopCassinoComparador?",
-      "answer": "Não. O nosso serviço de comparação é totalmente gratuito. Podemos receber uma comissão de afiliação quando um utilizador se regista através dos nossos links, mas isso nunca influencia as nossas avaliações."
+      "question": "A consulta deste website tem algum custo?",
+      "answer": "Não. O acesso é livre e não requer registo, criação de conta ou fornecimento de dados pessoais identificáveis. Podemos receber uma compensação quando a navegação é continuada após a saída deste site, sem que isso influencie os conteúdos."
     },
     {
-      "question": "Qual a idade mínima para jogar em casinos online?",
-      "answer": "A idade mínima legal para jogo online em Portugal é 18 anos. Todos os operadores licenciados pelo SRIJ têm a obrigação de verificar a idade dos seus utilizadores."
+      "question": "Qual é a idade mínima para consultar estes conteúdos?",
+      "answer": "O acesso é destinado exclusivamente a utilizadores maiores de 18 anos, em conformidade com as práticas aplicáveis a este tipo de conteúdo. A validação da idade é pedida antes de continuar."
     },
     {
-      "question": "Como funciona o requisito de aposta (wagering)?",
-      "answer": "O requisito de aposta indica quantas vezes é necessário apostar o valor do bónus antes de poder levantar os ganhos associados. Por exemplo, um requisito de 35x sobre um bónus de 100€ implica apostar 3.500€ antes de poder levantar os fundos do bónus."
+      "question": "O que significam as condições de utilização indicadas?",
+      "answer": "Indicam o número de vezes que um determinado valor tem de ser movimentado antes de os montantes associados ficarem disponíveis para retirada. Recomendamos confirmar sempre os termos atuais diretamente na plataforma em causa."
     },
     {
-      "question": "O que devo fazer se sentir que estou a perder o controlo do jogo?",
-      "answer": "Recomendamos que contacte imediatamente a Linha 1414 do ICAD (gratuita e confidencial) ou visite a nossa página de Jogo Responsável, onde encontra ferramentas de autoexclusão e outros recursos de apoio."
+      "question": "Onde posso obter apoio sobre utilização equilibrada?",
+      "answer": "Existem recursos independentes e especializados que disponibilizam informação e aconselhamento geral. Em Portugal pode contactar a Linha 1414 do ICAD, gratuita e confidencial. Consulte também a nossa página de Utilização Consciente."
     }
   ]
 }

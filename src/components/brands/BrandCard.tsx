@@ -1,66 +1,56 @@
 import type { Brand } from "@/lib/types";
 import { BrandLogoMark } from "@/components/brands/BrandLogoMark";
 import { AffiliateCardLink } from "@/components/brands/AffiliateCardLink";
-import { StarRating } from "@/components/ui/StarRating";
-import { Badge } from "@/components/ui/Badge";
-import { formatCurrency } from "@/lib/utils";
+import { Stars } from "@/components/ui/Stars";
+import { calculateRating, calculateStars } from "@/lib/ranking";
+import { formatRating } from "@/lib/utils";
 
 interface BrandCardProps {
   brand: Brand;
-  compact?: boolean;
+  /** Position in the rendered list, starting at 1. Drives rating, stars and badge. */
+  order: number;
 }
 
-export function BrandCard({ brand, compact }: BrandCardProps) {
+export function BrandCard({ brand, order }: BrandCardProps) {
+  const rating = calculateRating(order);
+  const stars = calculateStars(order);
+
   return (
     <AffiliateCardLink
       id={brand.slug}
       partnerUrl={brand.affiliateUrl}
-      ariaLabel={`Visitar ${brand.name} (abre em nova aba)`}
-      className="scroll-mt-28 block rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-white/[0.02] p-4 transition-colors hover:border-primary/30 sm:p-5"
+      ariaLabel={`Explorar ${brand.name} (abre em nova aba)`}
+      className="bg-card-radial scroll-mt-28 block rounded-2xl border border-primary/20 p-3 transition-colors hover:border-primary/40"
     >
-      <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-8">
-        <div className="flex items-center gap-4 lg:contents">
-          <div className="relative shrink-0">
+      <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-4 lg:gap-6">
+        <div className="flex items-center justify-between gap-4 md:contents">
+          <div className="relative shrink-0 md:order-1">
             <BrandLogoMark logo={brand.logo} name={brand.name} accent={brand.accent} />
-            <span className="absolute -top-2 -left-2 flex h-6 w-6 items-center justify-center rounded-full border border-background bg-primary text-[11px] font-bold text-background">
-              {brand.rank}
+            <span className="absolute -left-1 -top-1 flex h-6 w-6 items-center justify-center rounded-full border border-background bg-primary text-[11px] font-bold text-background">
+              {order}
             </span>
           </div>
 
-          <div className="flex min-w-0 flex-col justify-center gap-2.5 lg:min-w-[180px] lg:shrink-0">
-            <h3 className="font-display text-base font-bold uppercase text-white sm:text-lg">{brand.name}</h3>
-            <StarRating rating={brand.rating} votes={brand.votes} size="md" />
+          <div className="flex shrink-0 flex-col items-center gap-1 md:order-3">
+            <div className="flex items-center gap-1">
+              <span className="font-display text-2xl font-bold leading-none text-white lg:text-[28px]">
+                {formatRating(rating)}
+              </span>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden className="h-6 w-6 text-accent lg:h-7 lg:w-7">
+                <path d="M12 2l2.9 6.3 6.9.8-5.1 4.6 1.4 6.8L12 17.1 5.9 20.5l1.4-6.8-5.1-4.6 6.9-.8L12 2z" />
+              </svg>
+            </div>
+            <Stars value={stars} />
           </div>
         </div>
 
-        <div className="flex-1 lg:border-x lg:border-white/10 lg:px-8">
-          <Badge className="mb-2">{brand.badge}</Badge>
-          <p className="font-semibold text-primary-light">{brand.bonus.headline}</p>
-          {!compact && (
-            <ul className="mt-2 space-y-1 text-xs text-gray-300 sm:text-sm">
-              {brand.pros.slice(0, 2).map((pro) => (
-                <li key={pro} className="flex items-start gap-1.5">
-                  <span className="mt-0.5 text-primary">✓</span>
-                  <span>{pro}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+        <p className="font-semibold leading-snug text-white md:order-2 md:max-w-[15rem] lg:max-w-[17rem] lg:text-[17px]">
+          {brand.bonus.headline}
+        </p>
 
-        <div className="flex items-center justify-between gap-3 lg:w-[200px] lg:shrink-0 lg:flex-col lg:items-stretch">
-          <div className="text-xs text-gray-400">
-            <p>
-              Depósito mín. <span className="font-semibold text-white">{formatCurrency(brand.bonus.minDeposit)}</span>
-            </p>
-            <p>
-              Licença <span className="font-semibold text-white">{brand.licenses[0]?.authority}</span>
-            </p>
-          </div>
-          <span className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-background shadow-lg shadow-primary/20">
-            Ver Oferta
-          </span>
-        </div>
+        <span className="flex items-center justify-center rounded-full bg-gradient-to-b from-accent-light to-accent px-6 py-2.5 text-[15px] font-semibold text-black shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] md:order-4 md:w-[11rem] md:shrink-0 lg:w-[13.75rem]">
+          Explorar agora
+        </span>
       </div>
     </AffiliateCardLink>
   );
